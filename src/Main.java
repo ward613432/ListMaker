@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,16 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean cont = true;
 
-        objects.add("c#");
-        objects.add("html");
-        objects.add("css");
-        objects.add("c++");
-        objects.add("java");
-        objects.add("python");
-        objects.add("swift");
-        objects.add("rust");
-        objects.add("f#");
-        objects.add("c");
+        objects.addAll(Arrays.asList("c#", "html", "css", "c++", "java", "python", "swift", "rust", "f#", "c"));
 
         while (cont) {
             String input = InputHelper.getNonZeroLenString(scanner, "Options: A (add to list), D (delete from list), P (print the list), Q (quit the program)");
